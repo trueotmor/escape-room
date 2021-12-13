@@ -70,6 +70,8 @@ const TabBtn = styled.button.attrs({ type: 'button' })`
     `}
 `;
 
+const TabIcon = styled.img``;
+
 const TabTitle = styled.span`
   margin-left: 13px;
   padding-top: 4px;
@@ -200,11 +202,20 @@ const QuestFeatureItem = styled.li`
   }
 `;
 
+const Notice = styled.p`
+  margin: 0;
+  padding: 0;
+  font-size: ${({ theme }) => theme.font.formsHeading};
+  font-weight: 600;
+  color: ${({ theme }) => theme.color.whiteSmoke};
+`;
+
 export {
   Tabs,
   TabItem,
   TabBtn,
   TabTitle,
+  TabIcon,
   QuestsList,
   QuestItem,
   QuestItemLink,
@@ -214,4 +225,5 @@ export {
   QuestImage,
   QuestFeatures,
   QuestFeatureItem,
+  Notice,
 };

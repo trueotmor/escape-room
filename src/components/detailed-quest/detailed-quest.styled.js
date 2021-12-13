@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Button } from 'components/common/common';
 
 const Main = styled.main`
-  max-width: 556px;
+  max-width: 680px;
   margin-top: 149px;
   margin-bottom: 149px;
   margin-left: 43.92vw;

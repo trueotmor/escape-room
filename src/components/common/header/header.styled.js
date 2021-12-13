@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { Container, Link as RouterLink } from 'components/common/common';
+import { Container, NavLink as RouterLink } from 'components/common/common';
 
 const StyledHeader = styled.header`
   z-index: 5;
@@ -64,7 +64,7 @@ const LinkItem = styled.li`
   }
 `;
 
-const Link = styled(RouterLink)`
+const NavLink = styled(RouterLink)`
   display: block;
   max-width: 100px;
   font-size: ${({ theme }) => theme.font.semibase};
@@ -83,6 +83,10 @@ const Link = styled(RouterLink)`
 
   &:focus,
   &:hover {
+    color: ${({ theme }) => theme.color.tangerine};
+  }
+
+  &.active {
     color: ${({ theme }) => theme.color.tangerine};
   }
 `;
@@ -113,6 +117,6 @@ export {
   Image,
   Links,
   LinkItem,
-  Link,
+  NavLink,
   Phone,
 };
